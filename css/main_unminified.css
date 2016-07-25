@@ -39256,19 +39256,19 @@ a.link-gray, a.link-gray:visited{
   width: 100%;
   height: 2px;
   cursor: pointer;
-  background: #b2b2b2;
+  background: rgba(19, 126, 193, 0.45);
 }
 .range input::-moz-range-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
-  background: #b2b2b2;
+  background: rgba(19, 126, 193, 0.45);
 }
 .range input::-ms-track {
   width: 100%;
   height: 2px;
   cursor: pointer;
-  background: #b2b2b2;
+  background: rgba(19, 126, 193, 0.45);
 }
 .range input:focus {
   background: none;
@@ -39292,7 +39292,7 @@ a.link-gray, a.link-gray:visited{
   float: left;
   width: 25%;
   text-align: center;
-  color: #b2b2b2;
+  color: #757575;
   font-size: 14px;
   cursor: pointer;
 }
@@ -39305,7 +39305,7 @@ a.link-gray, a.link-gray:visited{
   margin: 0 auto;
   width: 9px;
   height: 9px;
-  background: #b2b2b2;
+  background: #94c5e3;
   border-radius: 50%;
 }
 .range-labels .active {
@@ -39323,10 +39323,35 @@ a.link-gray, a.link-gray:visited{
 .rangeRows{
     height: 80px;
 }
+#opcion1.rangeRows {
+    margin-top: 50px;
+}
+@media (max-width: 960px){
+    .range-labels {
+        margin: 18px -40px 0;
+    }
+}
+
 @media (max-width: 680px) {
     .FormRadios--v2 .FormInputCheckbox-label{
             display: inline-block;
     }
+    .range-labels {
+        margin: 18px -75px 0;
+
+    }
+    .rangeRows {
+        padding: 0 50px;
+    }
+    /*
+    .range-labels li:first-child {
+        margin-left: 35px;
+    }
+    .range-labels li:last-child {
+        margin-left: 16px;
+        text-align: left;
+        max-width: 100px;
+    }*/
 }
 @media (max-width: 570px) {
     .FormRadios--v2 .FormInputCheckbox-label{
@@ -39334,4 +39359,20 @@ a.link-gray, a.link-gray:visited{
             width: 94%;
             padding: 0 10px 10px 5px !important;
     }
+    .range-labels {
+        margin: 18px -65px 0;
+
+    }
 }
+@media (max-width: 500px) {
+    .range-labels {
+        margin: 18px -30px 0;
+
+    }
+    .rangeRows {
+        padding: 0 30px;
+    }
+}
+
+
+
